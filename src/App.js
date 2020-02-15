@@ -33,6 +33,8 @@ function App() {
 
   // Second attempt using key value pairs to avoid sorting. The assignment did not mention anything about
   // upper and lower case situations so I have chosen not to include it. If it was added in I would simply toLowerCase both strings before looping to fill object
+  // Another interesting question, is a word an anagram of itself? Currently this function says it is but it can 
+  // be changed simply by adding in an if else to the first for loop (with i) to check inputStr with data[i].
   function compare (inputStr) {
     let count = 0;
     for (let i = 1; i < data.length; i++) {
